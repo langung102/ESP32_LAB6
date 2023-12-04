@@ -12,5 +12,6 @@
     ],
     "idf.port": "/dev/ttyUSB0",
     "idf.pythonBinPath": "/home/minhlang102/.espressif/python_env/idf5.1_py3.10_env/bin/python",
-    "idf.toolsPath": "/home/minhlang102/.espressif"
+    "idf.toolsPath": "/home/minhlang102/.espressif",
+    "idf.flashType": "UART"
 }

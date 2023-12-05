@@ -11,9 +11,9 @@
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
-#define EXAMPLE_ESP_WIFI_SSID      "TP-Link_25E6"
-#define EXAMPLE_ESP_WIFI_PASS      "68156336"
-#define EXAMPLE_ESP_MAXIMUM_RETRY  10
+#define ESP_WIFI_SSID      "TP-Link_25E6"
+#define ESP_WIFI_PASS      "68156336"
+#define ESP_MAXIMUM_RETRY  10
 
 static EventGroupHandle_t s_wifi_event_group;
 
@@ -75,7 +75,7 @@ void wifi_init_sta(void)
         .sta = {
             .ssid = EXAMPLE_ESP_WIFI_SSID,
             .password = EXAMPLE_ESP_WIFI_PASS,
-	     .threshold.authmode = WIFI_AUTH_WPA2_PSK,
+	        .threshold.authmode = WIFI_AUTH_WPA2_PSK,
         },
     };
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
